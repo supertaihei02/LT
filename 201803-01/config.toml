@@ -3,7 +3,7 @@ theme           = "remark-twemoji"
 languageCode    = "en-us"
 title           = "ホスティング最前線"
 canonifyurls    = true
-publishDir      = "../public/201803-01"
+publishDir      = "../docs/201803-01"
 
 [params]
   googleAnalytics = ""
