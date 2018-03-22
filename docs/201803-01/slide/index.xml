@@ -20,5 +20,65 @@
 #.fonth2[Hosting] #.fonth6[最前線] 2018&amp;frasl;03 01回</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/slide/02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slide/02/</guid>
+      <description>--- class: split-50 nopadding bkgpos_00 background-image: url(bkgs/bubble-right.png) .column_t2.font10em[  ] .column_t2[.vmiddle.xkcd_font.pushfront.center[ #.red[WHY?] 何故ホスティングサービス？ ]] </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slide/03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slide/03/</guid>
+      <description>--- class: split-50 nopadding bkgpos_00 background-image: url(bkgs/bubble-left.png) .column_t2[.vmiddle.xkcd_font.pushfront.center[ #.blue[BECAUSE] #### Static Site Generators ・Hugo ・jekyll ・Hexo ・Getsby etc... 公開するときどこに置いたらいいの？ ホスティングサービスしかないやん？ ]] .column_t2.font10em[  ] </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slide/04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slide/04/</guid>
+      <description>class: center, middle, inverse
+HOSTING SERVICE 一言にホスティングサービスと言っても 選択の幅は広い レンタルサーバー サーバー上の公開領域を契約者同士でシェアするサービス。
+メリット  財布に優しい 月数百円〜高くても千円台 PHPとかPerlとかメールとかだいたい使える サーバーの事知らなくても使える  デメリット  ファイルの設置方法が基本FTPでセキュリティ上不安 PHP等のバージョンは指定されたものしか使えない（結構多いけど） 他の契約者のサイトにアクセス集中していると遅くなったり 他の契約者が変なスクリプト動かしていると遅くなったり 攻撃を受けるとすぐ落ちたり 素人が多いためサポートの一貫で運営会社が勝手に自分のファイルを触ったり覗いたりがざら  例：XSERVER、さくらインターネット、ロリポップ&amp;hellip;
+VPS（Virtual Private Server） 1台のサーバーを共有する点ではレンタルサーバーと同一だが、サーバー上の割り当て領域を1台の専用サーバーとして扱う仮想化技術により作成された環境を契約する。
+メリット  ssh接続によりセキュアにファイル転送可能 自由にアプリケーションをインストールできる事が最大の利点 割り当て性能を1ユーザーで占有できる  デメリット  Webサーバーのインストール等の知識が必要 セキュリティに問題のあるミドルウェアのアップデート等を自分で対応しないといけない サーバーへの相乗り人数によっては共用サーバーの方がパフォーマンスが良いことも 拡張時の自由度が低い（基本的に別スペックの新サーバーを再契約、増設時も別ネットワークだったり）  例：さくらのVPS、ConoHa&amp;hellip;
+クラウドサーバー（Iaas） 仮想化技術によって作られたサーバーを契約する点ではVPSと同一だが、割り当てるネットワーク、CPU、メモリ等のリソースも動的に選択できる。
+メリット  拡張性が非常に高いのが最大の利点 従量課金制という仕組みがしばしば取られ使った分だけ払えばいい 仕組み上、同一のサーバーを用意に複製したり、スナップショット（バックアップ）できる ネットワークも構築できるため、クラウド上に堅牢な環境を構築できる  デメリット  柔軟に色々な事ができる分扱いには知識が必須 従量課金制のため予算の見積もりがしにくい 使った分だけ払うから安いと思いきや以外とそういうケースは少ない Webサーバーのインストール等の知識が必要 セキュリティに問題のあるミドルウェアのアップデート等を自分で対応しないといけない  例：AWS EC2、GCP Cloud Server、 Azure、Heroku&amp;hellip;
+class: center, middle, inverse</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slide/05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slide/05/</guid>
+      <description>.left-column[ ## Static Web Hosting
+ ### .blue[Github Pages] #### AWS S3 #### Firebase Hosting #### Netlify ] .right-column[  github上のgitリポジトリを公開できる。
+リリース当初から少しずつ機能が充実してきて、 プライベートリポジトリ以外も公開できるようになった（有料会員のみ）、 masterリポジトリ、特定サブディレクトリのWEBルート化ができるようになっている。
+制限付きながら無料利用可能のためカードの登録なしで開始できるのがお手頃でGoodだが反面制限を超える大規模運用はサポートされない。
+ 無料利用可能 Jekyllの自動ビルド 独自ドメイン：◯ 独自ドメインSSL：× アクセス制限はかけられない  ** 制限 **
+         ストレージ 最大1GB/repo   リクエスト数 10万/月   帯域 1GB/月   ビルド 10/hour    制限を超えると非公開にされたりgithubからアラートが届くよう
+]
+.left-column[ ## Static Web Hosting
+ #### Github Pages ### .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slide/06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slide/06/</guid>
+      <description>--- class: split-50 nopadding bkgpos_00 background-image: url(bkgs/bubble-right.png) .column_t2.font10em[  ] .column_t2[.vmiddle.xkcd_font.pushfront.center[ #.red[Thank u!] ユースケースに合わせて最適なホスティングサービスを選びましょう！ ]] </description>
+    </item>
+    
   </channel>
 </rss>
