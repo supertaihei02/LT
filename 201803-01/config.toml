@@ -14,4 +14,4 @@ publishDir      = "../docs/201803-01"
 # Notice
 # Theme「remark-twemoji」で使えるtwemoji
 # https://twitter.github.io/twemoji/preview.html
-#
+# emojiはhttps://afeld.github.io/emoji-css/で確認
