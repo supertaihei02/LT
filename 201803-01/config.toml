@@ -1,0 +1,17 @@
+baseurl         = "/"
+theme           = "remark-twemoji"
+languageCode    = "en-us"
+title           = "ホスティング最前線"
+canonifyurls    = true
+publishDir      = "../public/201803-01"
+
+[params]
+  googleAnalytics = ""
+  name            = "Taihei Yokosuka"
+  description     = "Webサイトホスティング先のパターン別決め方ノウハウ"
+  custom_css      = ["custom.css"]
+
+# Notice
+# Theme「remark-twemoji」で使えるtwemoji
+# https://twitter.github.io/twemoji/preview.html
+#
